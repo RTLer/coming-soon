@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+      font-family: monospace;
+    }
+    
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+    }
+    
+    .message {
+      position: absolute;
+      bottom: 100px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+    
+    @media (min-width: 640px) {
+      .message {
+        font-size: 16px;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .message {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particleCanvas" aria-label="Interactive particle effect with Coming Soon text"></canvas>
+  <div class="message">
+    Stay tuned for our exciting announcement
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
